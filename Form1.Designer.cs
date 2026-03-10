@@ -28,12 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            textBoxA = new TextBox();
+            textBoxB = new TextBox();
+            textBoxC = new TextBox();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // textBoxA
+            // 
+            textBoxA.Location = new Point(30, 42);
+            textBoxA.Name = "textBoxA";
+            textBoxA.Size = new Size(125, 27);
+            textBoxA.TabIndex = 0;
+            // 
+            // textBoxB
+            // 
+            textBoxB.Location = new Point(30, 93);
+            textBoxB.Name = "textBoxB";
+            textBoxB.Size = new Size(125, 27);
+            textBoxB.TabIndex = 1;
+            // 
+            // textBoxC
+            // 
+            textBoxC.Location = new Point(30, 144);
+            textBoxC.Name = "textBoxC";
+            textBoxC.Size = new Size(125, 27);
+            textBoxC.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(249, 66);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 81);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(textBoxC);
+            Controls.Add(textBoxB);
+            Controls.Add(textBoxA);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBoxA;
+        private TextBox textBoxB;
+        private TextBox textBoxC;
+        private Button button1;
     }
 }
