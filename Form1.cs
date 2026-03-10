@@ -6,7 +6,9 @@ namespace cs_gui_2
         {
             InitializeComponent();
 
-
+            textBoxA.Text = Properties.Settings.Default.saveA;
+            textBoxB.Text = Properties.Settings.Default.saveB;
+            textBoxC.Text = Properties.Settings.Default.saveC;
         }
 
         private void button1_Click(object sender, EventArgs e)
